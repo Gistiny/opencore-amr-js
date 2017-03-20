@@ -6,7 +6,7 @@
 </head>
 <body>
 <p id="sample-amr">
-    <button onclick="play()">Play</button> <a href="asset/test.amr">yuan.amr</a>
+    <button onclick="play()">Play</button> <a href="https://gistiny.github.io/opencore-amr-js/assets/test.amr">test.amr</a>
 </p>
 <script src="js/libs/jquery.min.js"></script>
 <script src="js/libs/pcmdata.min.js"></script>
@@ -18,7 +18,7 @@
 <script src="js/libs/encoder.js"></script>
 <script>
     function play() {
-        var url ="asset/test.amr";
+        var url ="https://gistiny.github.io/opencore-amr-js/assets/test.amr";
         AMR.util.fetchBinaryString(url,function(data){
             AMR.util.toString(data,function(result){
                 var samples = new AMR({
